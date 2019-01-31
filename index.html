@@ -134,4 +134,18 @@ for(var i = 0; i<particles.length; i++)
 }
 </script>
 	</body>
+	<script>
+		window.onload=function(){ 
+		var timer=5;
+		var flag;
+		function daoji(){
+		timer=timer-1;
+		if(timer==0){
+		location.href="first.html";
+		clearInterval(flag);
+		}
+	}
+  flag=setInterval(daoji,1000);
+	} 
+	</script>
 </html>
